@@ -41,7 +41,7 @@ $background-color_2: #cc005f;
 $background-color_3: #fff;
 $background-color_4: #cde1f8;
 $background-color_5: #1b1b1b;
-$background-color_6: #0062d3;
+$background-color_6: #0000d3;
 $background-color_7: rgba(0, 0, 0, 0.6);
 $background-color_8: transparent;
 $background-color_9: rgba(255, 255, 255, 0.4);
@@ -73,6 +73,9 @@ $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
 @import "header";
 @import "banner";
 @import "social";
+
+@import "about";
+@import "contact";
 @import "footer";
 
 // @import "dark-mode";
