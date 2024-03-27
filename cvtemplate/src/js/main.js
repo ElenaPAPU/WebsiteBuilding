@@ -175,9 +175,8 @@ import GLightbox from 'glightbox';
      * Initiate portfolio lightbox 
      */
     const portfolioLightbox = GLightbox({
-      selector: '.portfolio-lightbox'
+        selector: '.portfolio-lightbox'
     });
-
 
     /**
      * Testimonials slider
@@ -229,36 +228,7 @@ import GLightbox from 'glightbox';
      */
     // new PureCounter();
 
-    
-
-})();
-
-// Prima varianta de a face skill bar-ul animat 
-//   var offsetTop = $('.skills').offset().top;
-// 	$(window).scroll(function() {
-//         var height = $(window).height();
-//         if($(window).scrollTop()+height > offsetTop) {
-//           jQuery('.skillbar').each(function(){
-//             jQuery(this).find('.skillbar-bar').animate({
-//               width:jQuery(this).attr('data-percent')
-//             },2000);
-//           });
-//         }
-//         });
-
-// $(".bar").each(function () {
-//     $(this)
-//       .find(".progress-bar")
-//       .animate(
-//         {
-//           width: $(this).attr("data-width")
-//         },
-//         2000
-//       );
-//   });
-
-(function () {
-    'use strict'
+    // Validare
     const forms = document.querySelectorAll('.requires-validation')
     Array.from(forms)
         .forEach(function (form) {
@@ -270,5 +240,11 @@ import GLightbox from 'glightbox';
 
                 form.classList.add('was-validated')
             }, false)
-        })
+        });
+
+
+
+
+
 })();
+
