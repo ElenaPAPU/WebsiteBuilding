@@ -19,3 +19,4 @@ import '../node_modules/glightbox/dist/js/glightbox.min.js'
 import './js/main.js';
 import "./js/skill.js";
 import "./js/githubapi.js";
+import "./js/translate.js";

@@ -77,6 +77,17 @@
                             else {
                                 showData(result);
                                 console.log('succes', result);
+                                getData(3, (error, result) => {
+                            if (error) {
+                                console.log(error);
+                            }
+                            else {
+                                showData(result);
+                                console.log('succes', result);
+                                
+                            }
+                        });
+                                
                             }
                         });
                     }
