@@ -1,3 +1,4 @@
+
 const cheerio = require('cheerio');
 const fs = require('fs');
 
@@ -13,6 +14,13 @@ function buildJSON() {
         wordsTr.push({
             [key]: value
         })
+    });
+    $("[data-typed-tr]").each(function () {
+        const value = $(this)[0].attribs['data-typed-items']
+        let key = $(this)[0].attribs['data-typed-tr'];
+        wordsTr.push({
+            [key]: value
+        })
     })
     // console.log(wordsTr);
     // Pas 2 transform in json
@@ -21,7 +29,7 @@ function buildJSON() {
 
 
 
-    // Pas 3 scriu in fiser
+    // Pas 3 scriu in fisier
     fs.writeFile("./src/lang/trans.json", json, function (err) {
         if (err) throw err;
         console.log('complete');

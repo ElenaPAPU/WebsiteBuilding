@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebSite Building Bootstrap + Webpack</title>
-<link rel="icon" href="favicon.ico?2127fbce95853e7ae5c4"><link href="css/main.css?2127fbce95853e7ae5c4" rel="stylesheet"></head>
+<link rel="icon" href="favicon.ico?126b6e7e576a5b7e1e27"><link href="css/main.css?126b6e7e576a5b7e1e27" rel="stylesheet"></head>
 
 <body>
     <!-- ======= Header ======= -->
@@ -16,14 +16,14 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <a href="index.html" class="logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
 
-        <nav id="navbar" class="navbar">
+                <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero" data-tr="meniu.home">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about" data-tr="meniu.about">About</a></li>
                 <li><a class="nav-link scrollto " href="#resume" data-tr="meniu.work">Work</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio" data-tr="meniu.portfolio">Portfolio</a></li>          
                 <li><a class="nav-link scrollto " href="#blog" data-tr="meniu.blog">Blog</a></li>
-                
+                <li><a class="nav-link scrollto " href="#experience" data-tr="meniu.experience">Experience</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -45,6 +45,11 @@
                 <li><a class="nav-link scrollto" href="#contact" data-tr="meniu.contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
+            <ul>
+
+                <li><a href="index.html" onclick="window.changeLanguage('en')">English</a></li>
+                <li><a href="index.html" onclick="window.changeLanguage('ro')">Romana</a></li>
+            </ul>
         </nav><!-- .navbar -->
 
     </div>
@@ -57,9 +62,9 @@
     <div class="hero-content display-table">
         <div class="table-cell">
             <div class="container">
-                <p class="display-6 color-d">Hello, world!</p>
-                <h1 class="hero-title mb-4">I am Elena</h1>
-                <p class="hero-subtitle"><span class="typed"
+                <p class="display-6 color-d" data-tr="hello">Hello, world!</p>
+                <h1 class="hero-title mb-4" data-tr="myname">I am Elena</h1>
+                <p class="hero-subtitle"><span class="typed" id="typed" data-typed-tr="typed" 
                         data-typed-items="Teacher, Mentor, Developer, Freelancer, Designer"></span></p>
                 <ul class="list-inline list-social">
                     <li>
@@ -95,14 +100,14 @@
 
                 </ul>
                 <p class="pt-3 intro-content ">
-                    <a class="button stroke smoothscroll" href="#about" title="">More About Me <i
+                    <a class="button stroke smoothscroll" href="#about" title="" data-tr="moreaboutme">More About Me <i
                             class="bi bi-arrow-bar-down"></i></a>
 
                 </p>
             </div>
         </div>
     </div>
-    <!-- https://www.codingflicks.com/2021/04/html-css-scroll-down-arrow-examples.html --> scrol sageti
+    <!-- https://www.codingflicks.com/2021/04/html-css-scroll-down-arrow-examples.html scrol sageti -->
     
 </div><!-- End Hero Section -->
             <main id="main">
@@ -122,37 +127,27 @@
                                 </div>
                                 <div class="col-sm-6 col-md-7">
                                     <div class="about-info">
-                                        <p><span class="title-s">Name: </span> <span>Adrian Adiaconitei</span></p>
-                                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                                        <p><span class="title-s" data-tr="myname">Name: </span> <span>Adrian Adiaconitei</span></p>
+                                        <p><span class="title-s" data-tr="profile">Profile: </span> <span>full stack developer</span></p>
+                                        <p><span class="title-s" data-tr="email">Email: </span> <span>contact@example.com</span></p>
+                                        <p><span class="title-s" data-tr="phone">Phone: </span> <span>(617) 557-0089</span></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="about-me pt-4 pt-md-0">
                                 <div class="title-box-2">
-                                    <h5 class="title-left">
+                                    <h5 class="title-left" data-tr="aboutme">
                                         About me
                                     </h5>
                                 </div>
-                                <p class="lead">
-                                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu
-                                    erat, accumsan id
-                                    imperdiet et, porttitor
-                                    at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                                    porttitor accumsan tincidunt.
+                                <p class="lead" data-tr="info">
+                                    I'm an enthusiastic full stack developer freelancer, passionate about creating engaging and functional web experiences. With solid industry experience and a constant thirst for knowledge, I am passionate about my projects to bring ideas to life and create innovative technological solutions
                                 </p>
-                                <p class="lead">
-                                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor
-                                    eget felis
-                                    porttitor volutpat. Vestibulum
-                                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                                <p class="lead" data-tr="info">
+                                    With a creative and results-oriented approach, I aim to turn clients' visions into reality, building high-performance web applications, interactive websites and customized solutions tailored to the specific needs of each project.
                                 </p>
-                                <p class="lead">
-                                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
-                                    elementum id enim.
-                                    Nulla porttitor accumsan
-                                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                <p class="lead" data-tr="info">
+                                    From conceptual design to hands-on implementation, I'm involved in every detail of the development process, ensuring that the end result exceeds expectations and delivers a memorable digital experience.
                                 </p>
                             </div>
 
@@ -160,7 +155,7 @@
                         <div class="col-md-6">
                             <div class="skill-mf">
                                 <div class="title-box-2">
-                                    <h5 class="title-left">
+                                    <h5 class="title-left" data-tr="myskills">
                                         My Skills
                                     </h5>
                                 </div>
@@ -253,7 +248,7 @@
                 <div class="box-shadow-full">
                     <div class="row resume-timeline">
 
-                        <div class="col-twelve resume-header">
+                        <div class="col-twelve resume-header" data-tr="workexperience">
 
                             <h2>Work Experience</h2>
 
@@ -270,19 +265,21 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>UI Designer</h3>
-                                        <p>July 2015 - Present</p>
+                                        <h3 data-tr="uidesigner">UI Designer, </h3>
+                                        <p data-tr="period">July 2015 - Present</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>Awesome Studio</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.
+                                        <h4 data-tr="awesomestudio">Awesome Studio</h4>
+                                        <p data-tr="about">
+                                            <ul>
+                                                <li>User interface design</li>
+                                                <li>Creating wireframes and mockups</li>
+                                                <li>Optimizing the user experience</li>
+                                                <li>Collaboration with the UX Designer</li>
+                                                <li>Design testing and iteration</li>
+                                                <li>Studying new trends and technologies</li>
+                                            </ul>
                                         </p>
                                     </div>
 
@@ -295,20 +292,21 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>Front-end Developer</h3>
-                                        <p>July 2014 - June 2015</p>
+                                        <h3 data-tr="frontenddeveloper">Front-end Developer</h3>
+                                        <p data-tr="period">July 2014 - June 2015</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>Super Cool Agency</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi
-                                            incididunt.
+                                        <h4 data-tr="supercoolagency">Super Cool Agency</h4>
+                                        <p  data-tr="about">
+                                            <ul>
+                                            <li>Web designs implementation</li>
+                                            <li>User interface development</li>
+                                            <li>Closely collaboration with the UI Designer, UX Designer and Backend Developer</li>
+                                            <li>Creating and maintaining the user interface</li>
+                                            <li>Code and resources optimizing to ensure fast page loading and a smooth user experience</li>
+                                            <li>Site testing and troubleshooting to identify and resolve any bugs or compatibility issues</li>
+                                            </ul>
                                         </p>
                                     </div>
 
@@ -321,20 +319,20 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>Web Designer</h3>
-                                        <p>May 2013 - June 2014</p>
+                                        <h3 data-tr="webdesigner">Web Designer</h3>
+                                        <p data-tr="period">May 2013 - June 2014</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>Great Designs Studio</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi
-                                            incididunt.
+                                        <h4 data-tr="greatdesignstudio">Great Designs Studio</h4>
+                                        <p data-tr="period">
+                                            <ul>
+                                            <li>Creating web designs</li>
+                                            <li>Development of visual concepts</li>
+                                            <li>Adapting the design for different devices</li>
+                                            <li>Collaboration with the development team</li>
+                                            <li>Ensuring coherence and consistency of web design</li>
+                                        </ul>
                                         </p>
                                     </div>
 
@@ -348,7 +346,7 @@
 
                     <div class="row resume-timeline">
 
-                        <div class="col-twelve resume-header">
+                        <div class="col-twelve resume-header" data-tr="education">
 
                             <h2>Education</h2>
 
@@ -365,19 +363,13 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>Master Degree</h3>
-                                        <p>July 2015 - Present</p>
+                                        <h3 data-tr="masterdegree">Master Degree</h3>
+                                        <p data-tr="period">July 2015 - Present</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>University of Life</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.
+                                        <h4 data-tr="UniversityOfLife">University of Life</h4>
+                                        <p data-tr="about">The University of Life has a team of qualified teaching staff and a modern infrastructure, which facilitates the learning and research process.
                                         </p>
                                     </div>
 
@@ -390,20 +382,14 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>Bachelor Degree</h3>
-                                        <p>July 2014 - June 2015</p>
+                                        <h3 data-tr="BachelorDegree">Bachelor Degree</h3>
+                                        <p data-tr="period">July 2014 - June 2015</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>State Design University</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi
-                                            incididunt.
+                                        <h4 data-tr="StateDesignUniversity">State Design University</h4>
+                                        <p data-tr="about">
+                                            State Design University is a prestigious institution renowned for its innovative approach to design education. 
                                         </p>
                                     </div>
 
@@ -416,20 +402,13 @@
                                     </div>
 
                                     <div class="timeline-header">
-                                        <h3>Bachelor Degree</h3>
-                                        <p>May 2013 - June 2014</p>
+                                        <h3 data-tr="BachelorDegree">Bachelor Degree</h3>
+                                        <p data-tr="period">May 2013 - June 2014</p>
                                     </div>
 
                                     <div class="timeline-content">
-                                        <h4>Design College</h4>
-                                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur
-                                            nisi
-                                            cupidatat
-                                            laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                            cupidatat nulla
-                                            esse
-                                            cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi
-                                            incididunt.
+                                        <h4 data-tr="DesignCollege">Design College</h4>
+                                        <p data-tr="about">Design College offers a dynamic learning environment where creativity thrives. 
                                         </p>
                                     </div>
 
@@ -451,10 +430,10 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
-                    <h3 class="title-a">
+                    <h3 class="title-a" data-tr="portfolio">
                         Portfolio
                     </h3>
-                    <p class="subtitle-a">
+                    <p class="subtitle-a" data-tr="latestprojects">
                         The latest projects completed
                     </p>
                     <div class="line-mf"></div>
@@ -472,9 +451,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Lorem impsum dolor</h2>
+                                <h2 class="w-title" data-tr="work">Lorem impsum dolor</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2023</span>
+                                    <span class="w-ctegory" data-tr="work">Web Design</span> / <span class="w-date">18 Sep. 2023</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -496,9 +475,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Loreda Cuno Nere</h2>
+                                <h2 class="w-title" data-tr="work">Loreda Cuno Nere</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">10 Jun. 2023</span>
+                                    <span class="w-ctegory" data-tr="work">Web Design</span> / <span class="w-date">10 Jun. 2023</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -520,9 +499,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Mavrito Lana Dere</h2>
+                                <h2 class="w-title" data-tr="work">Mavrito Lana Dere</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">07 Jan. 2023</span>
+                                    <span class="w-ctegory" data-tr="work">Web Design</span> / <span class="w-date">07 Jan. 2023</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -544,9 +523,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Bindo Laro Cado</h2>
+                                <h2 class="w-title" data-tr="work">Bindo Laro Cado</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">15 Sep. 2022</span>
+                                    <span class="w-ctegory" data-tr="work">Web Design</span> / <span class="w-date">15 Sep. 2022</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -568,9 +547,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Studio Lena Mado</h2>
+                                <h2 class="w-title" data-tr="work">Studio Lena Mado</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">22 Jun. 2021</span>
+                                    <span class="w-ctegory" data-tr="work">Web Design</span> / <span class="w-date">22 Jun. 2021</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -592,9 +571,9 @@
                     <div class="work-content">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h2 class="w-title">Studio Big Bang</h2>
+                                <h2 class="w-title" data-tr="work">Studio Big Bang</h2>
                                 <div class="w-more">
-                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">26 Jan. 2022</span>
+                                    <span class="w-ctegory" data-tr="WebDesign">Web Design</span> / <span class="w-date">26 Jan. 2022</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -641,7 +620,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="title-box-2">
-                                    <h5 class="title-left">
+                                    <h5 class="title-left" data-tr="sendmessage">
                                         Send Message Us
                                     </h5>
                                 </div>
@@ -668,8 +647,8 @@
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="subject" id="subject"
                                                         placeholder="Subject" required>
-                                                        <div class="valid-feedback">Campul Subject este valid!</div>
-                                                        <div class="invalid-feedback">Campul Subject trebuie completat corect!</div>
+                                                        <div class="valid-feedback">Campul Subiect este valid!</div>
+                                                        <div class="invalid-feedback">Campul Subiect trebuie completat corect!</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -681,13 +660,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-12 text-center my-3">
-                                                <div class="loading">Loading</div>
+                                                <div class="loading" data-tr="loading">Loading</div>
                                                 <div class="error-message"></div>
-                                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                <div class="sent-message" data-tr="message">Your message has been sent. Thank you!</div>
                                             </div>
                                             <div class="col-md-12 text-center">
                                                 <button type="submit"
-                                                    class="button button-a button-big button-rouded">Send
+                                                    class="button button-a button-big button-rouded" data-tr="sendmessage">Send
                                                     Message</button>
                                             </div>
                                         </div>
@@ -696,22 +675,18 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="title-box-2 pt-4 pt-md-0">
-                                    <h5 class="title-left">
+                                    <h5 class="title-left" data-tr="getintouch">
                                         Get in Touch
                                     </h5>
                                 </div>
                                 <div class="more-info">
-                                    <p class="lead">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem
-                                        soluta quidem
-                                        expedita aperiam aliquid at.
-                                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                                        mollitia inventore?
+                                    <p class="lead" data-tr="info">
+                                        Drop us a line using the contact form below, or connect with us on social media. We're here to help and excited to connect with you!
                                     </p>
-                                    <ul class="list-ico">
-                                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
-                                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
+                                    <ul class="list-ico" data-tr="info">
+                                        <li><span class="bi bi-geo-alt" data-tr="adress"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                                        <li><span class="bi bi-phone" data-tr="phone"></span> (617) 557-0089</li>
+                                        <li><span class="bi bi-envelope" data-tr="email"></span> contact@example.com</li>
                                     </ul>
                                 </div>
                                 <div class="socials">
@@ -765,11 +740,11 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="copyright-box">
-                    <p class="copyright">&copy; Copyright <strong>AboutMe</strong>. All Rights Reserved</p>
-                    <div class="credits">
+                    <p class="copyright" data-tr="copyright">&copy; Copyright <strong>AboutMe</strong>. All Rights Reserved</p>
+                    <div class="credits" data-tr="designedby">
 
 
-                        Designed by <a href="#">About Me</a>
+                        Designed by <a href="#" data-tr="aboutme">About Me</a>
                     </div>
                 </div>
             </div>
@@ -780,6 +755,6 @@
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
-<script defer src="js/main.bundle.js?2127fbce95853e7ae5c4"></script></body>
+<script defer src="js/main.bundle.js?126b6e7e576a5b7e1e27"></script></body>
 
 </html>
